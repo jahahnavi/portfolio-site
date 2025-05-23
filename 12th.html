@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahahnavi - Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Lora&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #3b332c;
+            color: #f5efe6;
+            font-family: "Limelight", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 150px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f5efe6;
+        }
+
+        nav ul li a:hover {
+            color: #ebd2a9;
+        }
+
+        .left {
+            font-size: 2rem;
+            padding: 0 60px;
+        }
+
+        .firstsection {
+            padding: 0 60px;
+            margin: 5px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            font-size: 1.8rem;
+            color: #ebd2a9;
+        }
+
+        .section-header a {
+            font-size: 1rem;
+            text-decoration: none;
+            color: #f5efe6;
+        }
+
+        .section-header a:hover {
+            color: #ebd2a9;
+        }
+
+        .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 8px auto 15px auto;
+        }
+
+        .secondsection {
+            padding: 30px 60px;
+            color: #f5efe6;
+            font-size: 1.1rem;
+            font-family: 'Lora';
+            line-height: 1.8;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .intro {
+            margin-bottom: 20px;
+        }
+
+        .summ {
+            margin-bottom: 20px;
+        }
+
+        .process {
+            position: relative;
+            display: inline-block;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .process img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ebd2a9;
+            display: block;
+            margin-left: 10%;
+        }
+        .text{
+            margin-top: 10%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jahnavi
+                <div>Arun</div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="github.html">Code</a></li>
+                    <li><a href="writing.html">Writing</a></li>
+                    <li><a href="about.html">About & Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="section-header">
+                <div>MOOSIC</div>
+                <div><a href="index.html"> ← Home</a></div>
+            </div>
+            <div class="box"></div>
+        </section>
+        <section class="secondsection">
+            <div class="intro">
+                <p><strong>"Moosic"</strong> was my final Computer Science project in Class 12 — a mood-based music player that recommends songs based on your current emotion. 
+                    <p>Built using Python for the backend and SQL for the database, it combines basic emotion detection with curated playlists.</p> 
+                    <p>I handled both logic and design.</p>
+                
+            </div>
+            <div class="summ">
+                Attached below are few images from the initial designing process to the final.
+            </div>
+            <div class="process">
+                    <img src="script.png" alt="Script Preview">
+            </div>
+            
+            <div class="stack">
+                <p><strong>TECH-STACK:</strong></p>
+                <p>Languages: Python, SQL</p><p>Tools: SQLite, Tkinter</p><p>Concepts used: CRUD operations, UI design, basic OOP, file handling</p>
+            </div>
+            </div>
+            <div class="text">
+                This project gave me a hands-on understanding of how coding can actually shape real-world tools. It also helped me realise that I enjoy blending tech and creativity — something I hope to keep exploring.
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

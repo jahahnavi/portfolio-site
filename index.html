@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahahnavi - Design Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Lora&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #3b332c;
+            color: #f5efe6;
+            font-family: "Limelight", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 150px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f5efe6;
+        }
+
+        nav ul li a:hover {
+            color: #ebd2a9;
+        }
+
+        .left {
+            font-size: 2rem;
+            padding: 0 60px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: flex-start;
+            padding: 0 60px;
+            margin: 8px;
+        }
+
+        .leftsection {
+            display: flex;
+            justify-content: flex-start;
+            padding: 0 50px;
+            font-size: 1.8rem;
+            color: #ebd2a9;
+        }
+
+        .secondsection {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0 60px;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .secondsection img {
+            max-width: 300px;
+            height: auto;
+            border: 2px #f5efe6;
+        }
+
+        .rightsection {
+            max-width: 600px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #ebd2a9;
+            font-family: 'Lora';
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            max-width: 300px;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid white;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-container:hover img {
+            opacity: 0.3;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #f5efe6;
+            font-size: 1.4rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .image-container:hover .overlay-text {
+            opacity: 1;
+        }
+
+        .thirdsection {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0 60px;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .thirdsection img {
+            max-width: 300px;
+            height: auto;
+            border: 2px #f5efe6;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jahnavi
+                <div>Arun</div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="github.html">Code</a></li>
+                    <li><a href="writing.html">Writing</a></li>
+                    <li><a href="about.html">About & Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Projects
+            </div>
+            <div class="box" style="background-color: white; 
+            width: 80vw; 
+            height: 2px;
+            margin: 15px;">
+            </div>
+        </section>
+        <section class="secondsection">
+            <a href="mallepulu.html" class="image-container">
+                <img src="film.png" alt="Film Project Poster">
+                <div class="overlay-text">Malle Pulu
+                    <div>"2025"</div>
+                </div>
+            </a>
+            <div class="rightsection">
+                Inspired by the quiet realism of Satyajit Ray and the visual poetry of Mani Ratnam,
+                <div>this story captures a woman’s silent defiance through the streets of Bengaluru — intimate,
+                    everyday, and deeply personal,
+                    told with my own touch.</div>
+            </div>
+        </section>
+        <section class="thirdsection">
+            <a href="12th.html" class="image-container">
+                <img src="cover.png" alt="">
+                <div class="overlay-text">Class 12 Project
+                    <div>"2024"</div>
+                </div>
+            </a>
+            <div class="rightsection">
+                "MOOSIC" A mood-based music player built using Python and SQL.  
+                <div>The system detects emotion through text input and suggests songs accordingly.</div>
+                <div>My first dive into human-centered tech — simple, scrappy, and heartfelt.</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

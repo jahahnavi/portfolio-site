@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahahnavi - Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Lora&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #3b332c;
+            color: #f5efe6;
+            font-family: "Limelight", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 150px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f5efe6;
+        }
+
+        nav ul li a:hover {
+            color: #ebd2a9;
+        }
+
+        .left {
+            font-size: 2rem;
+            padding: 0 60px;
+        }
+
+        .firstsection {
+            padding: 0 60px;
+            margin: 5px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            font-size: 1.8rem;
+            color: #ebd2a9;
+        }
+
+        .section-header a {
+            font-size: 1rem;
+            text-decoration: none;
+            color: #f5efe6;
+        }
+
+        .section-header a:hover {
+            color: #ebd2a9;
+        }
+
+        .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 8px auto 15px auto;
+        }
+
+        .secondsection {
+            padding: 30px 60px;
+            color: #f5efe6;
+            font-size: 1.1rem;
+            font-family: 'Lora';
+            line-height: 1.8;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .intro {
+            margin-bottom: 20px;
+        }
+
+        .summ {
+            margin-bottom: 20px;
+        }
+
+        .moodboard-intro {
+            margin-bottom: 20px;
+        }
+
+        .script {
+            position: relative;
+            display: inline-block;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .script img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ebd2a9;
+            display: block;
+            margin-left: 10%;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #f5efe6;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-family:'Lora';
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+
+        .script:hover img {
+            opacity: 0.6;
+        }
+
+        .script:hover .overlay-text {
+            opacity: 1;
+        }
+
+        .moodboard img,
+        .scene-sketches img {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            border: 2px solid #ebd2a9;
+        }
+
+        .scene-sketches {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .scene-sketches img {
+            flex: 1 1 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jahnavi
+                <div>Arun</div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="github.html">Code</a></li>
+                    <li><a href="writing.html">Writing</a></li>
+                    <li><a href="about.html">About & Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="section-header">
+                <div>Malle Pulu</div>
+                <div><a href="index.html"> ← Home</a></div>
+            </div>
+            <div class="box"></div>
+        </section>
+        <section class="secondsection">
+            <div class="intro">
+                <p><strong>Malle Pulu</strong> is a hypthetical film that showcases my way of romanticising Bangalore and showing the city through a young woman’s eyes — the little moments and everyday beauty that often go unnoticed.
+                    <p>It began with my love for the city and the question — what is it like to be new here and see the city for the first time?</p>
+                
+            </div>
+            <div class="script">
+                <a href="https://docs.google.com/document/d/1Lf-vwZBt2V67hsyCi28cAMapejs3gjyiHRiwEFtgscI/edit?usp=sharing" target="_blank">
+                    <img src="script.png" alt="Script Preview">
+                    <div class="overlay-text">Read Full Script Here</div>
+                </a>
+            </div>
+            <div class="summ">
+                <p>This script captures a single morning in Bengaluru through a woman's eyes — poetic, mundane, and
+                    quietly radical. We see her speak through choices, silences, and routines rather than words.</p>
+            </div>
+            <div class="moodboard">
+                <p>The moodboard brings together textures, tones, and cultural references that shaped the world of Malle
+                    Pulu — soft browns, old cottons, jasmine strings, and Ray-like framing.</p>
+            </div>
+            <div class="moodboard-image">
+                <img src="moodboard.jpg" alt="Moodboard">
+            </div>
+            <div class="text">
+                The following are few rough sketches of different scences from the sript.
+            </div>
+            <div class="scene-sketches">
+                <img src="scene1.jpg" alt="Scene Sketch 1">
+                <img src="scene2.jpg" alt="Scene Sketch 2">
+                <img src="scene3.jpg" alt="Scene Sketch 3">
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
